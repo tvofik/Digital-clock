@@ -39,4 +39,4 @@ function test() {
   // for the seconds blinker
   sc.classList.toggle('inactive');
 }
-// setInterval(test,1000);
+setInterval(test,1000);
