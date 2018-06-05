@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Teko:500,700');
+@import url('reset.css');
+
+html {
+  font-family: 'Times New Roman';
+  background: black;
+  color: white;
+}
+body{
+  /* display: flex; */
+  /* align-items: center; */
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  border: 2px solid white;
+  margin: 100px auto;
+  width: 500px;
+}
+
+.week-days{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  /* outline: 1px solid red; */
+  padding: 15px 0;
+}
+
+.week-days p{
+  /* outline: 1px solid red; */
+  font-size: 25px;
+  text-transform: uppercase;
+  line-height: .8;
+  color: rgba(255 , 255, 255, 0.2);
+
+}
+
+.clock-wrapper{
+  padding: 10px;
+  display: flex;
+  /* align-items: flex-end; */
+  justify-content: space-around; 
+  /* outline: 1px solid green; */
+}
+.time{
+  display: flex;
+  font-size: 120px;
+  /* outline: 2px solid tomato; */
+  padding: 15px;
+}
+.time > .hour , .time > .second, .time > .min{
+  font-size: 150px;
+  font-weight: 700;
+  line-height: .7;
+}
+.time .second{
+}
+
+
+.periods p {
+  font-size: 25px;
+  color: rgba(255 , 255, 255, 0.2);
+
+  /* line-height: .8; */
+
+  /* outline: 1px solid orange; */
+
+}
+
+.periods{
+  /* display: flex;
+  flex-direction: column; */
+
+  align-self: flex-end;
+  /* outline: 1px solid orange; */
+  margin: 0px 0px 0px 10px;
+  /* margin-right: 20px; */
+  padding: 15px;
+
+
+}
+
+
+/* change state */
+p.active{
+  color: white;
+}
+p.inactive{
+  color: rgba(255 , 255, 255, 0.2);
+}
